@@ -36,7 +36,7 @@ public class hjjh {
         caps.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 
         try {
-            driver = new RemoteWebDriver(new URI(" http://192.168.1.4:4444").toURL(), caps);
+            driver = new RemoteWebDriver(new URI("http://192.168.1.4:4444").toURL(), caps);
         } catch (MalformedURLException | URISyntaxException e) {
             throw new RuntimeException(e);
         }

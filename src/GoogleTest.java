@@ -17,7 +17,7 @@ public class GoogleTest {
 //        caps.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 //        caps.setCapability(CapabilityType.BROWSER_NAME, "chrome");
 
-        WebDriver driver = new RemoteWebDriver(new URI("http://192.168.1.139:4444").toURL(), caps );
+        WebDriver driver = new RemoteWebDriver(new URI("http://192.168.1.4:4444").toURL(), caps );
         driver.get("https://google.com");
         System.out.println(driver.getTitle());
 
